@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "39ce3kxI3png8NwuUXpHf"
+uri = "file://artifacts/mrjb-website/src/assets/images/hero.png"
+type = "image"
+title = "Aerial residential township golden hour"
+
+[[generated]]
+id = "k6lX_alZnicnMo5QgFgrj"
+uri = "file://artifacts/mrjb-website/src/assets/images/master-plan.png"
+type = "image"
+title = "Master plan blueprint real estate"
+
+[[generated]]
+id = "ZmZVXaK3whUnGbFRtkBCj"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-1.png"
+type = "image"
+title = "Wide internal road township"
+
+[[generated]]
+id = "kyC_XqW28fwWaQuxyNbI3"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-2.png"
+type = "image"
+title = "Grand gated entrance India"
+
+[[generated]]
+id = "C9PHbE5n-9r-t_PLGz8Kd"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-3.png"
+type = "image"
+title = "Green landscaped park modern"
+
+[[generated]]
+id = "KEY2AqWQtnm-sR9FG6IXM"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-4.png"
+type = "image"
+title = "Aerial view residential plots"
+
+[[generated]]
+id = "otYJbx2ghZXqf6UxGgVlh"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-5.png"
+type = "image"
+title = "Community hall exterior modern"
+
+[[generated]]
+id = "wP6uCTQOQ0sgx70E2Psql"
+uri = "file://artifacts/mrjb-website/src/assets/images/gallery-6.png"
+type = "image"
+title = "Street lighting night photography"

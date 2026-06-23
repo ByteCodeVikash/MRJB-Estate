@@ -1,0 +1,337 @@
+Create a premium modern real-estate website for MRJB Group.
+
+Reference Website:
+https://brajproperty.in
+
+IMPORTANT:
+Do NOT copy the reference website.
+Use it only for understanding structure, navigation, content flow and conversion strategy.
+
+Project Name:
+Kunj Bihari Enclave – Phase 1
+
+Company:
+MRJB Group
+
+Website Goal:
+Generate property leads for plot sales.
+Primary CTA:
+- Book Site Visit
+- Request Callback
+- Download Brochure
+- WhatsApp Inquiry
+
+Design Requirements:
+
+- Premium luxury real-estate design
+- Mobile-first responsive
+- Fast loading
+- SEO optimized
+- Modern animations
+- Clean typography
+- Professional color palette:
+  - Deep Blue (#0B2E59)
+  - Gold (#D4AF37)
+  - White
+- Glassmorphism effects
+- Smooth scroll animations
+- Sticky navigation
+- Modern cards
+- Property showcase sections
+
+Tech Stack:
+
+Frontend:
+- Next.js 15
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Lucide Icons
+
+Backend:
+- Next.js Server Actions
+
+Forms:
+- Store inquiries locally
+- Ready for future CRM integration
+
+Pages Required:
+
+1. HOME PAGE
+
+Hero Section:
+- Full-screen hero
+- Background image/video
+- Heading:
+
+"Kunj Bihari Enclave Phase 1"
+
+Subheading:
+
+"Premium Residential Plots Near Vrindavan"
+
+Buttons:
+- Book Site Visit
+- Download Brochure
+
+Trust Highlights:
+- Gated Township
+- Wide Roads
+- Water Line
+- Electricity
+- Security
+- Green Park
+
+--------------------------------------------------
+
+2. ABOUT PROJECT
+
+Project Overview
+
+Display:
+
+- Developed by MRJB Group
+- Premium plotted development
+- Near Vrindavan
+- Excellent future growth potential
+- Strategic location
+
+Add animated statistics:
+
+- Premium Township
+- Multiple Plot Sizes
+- Wide Internal Roads
+- Growing Investment Zone
+
+--------------------------------------------------
+
+3. MASTER PLAN / LAYOUT
+
+Interactive Layout Section
+
+Features:
+
+- Zoomable layout image
+- Full-screen preview modal
+- Plot layout showcase
+
+Title:
+
+"Project Layout & Master Plan"
+
+Add map viewer experience.
+
+--------------------------------------------------
+
+4. AMENITIES SECTION
+
+Create modern icon cards for:
+
+- Electricity Pole
+- Gated Township
+- Water Line
+- Wide Roads
+- CCTV Security
+- Security Guard
+- Green Park
+- Temple
+- Community Hall
+
+Hover animations.
+
+--------------------------------------------------
+
+5. GALLERY
+
+Township Images Gallery
+
+Features:
+
+- Masonry layout
+- Lightbox
+- Image zoom
+- Responsive gallery
+
+Categories:
+- Township
+- Roads
+- Development
+- Site Images
+
+--------------------------------------------------
+
+6. PRIME LOCATIONS
+
+Show nearby attractions:
+
+- Prem Mandir
+- Iskcon Temple
+- Keshi Ghat
+- Shri Madan Mohan Ji Mandir
+- Chandrodaya Mandir
+
+Display:
+- Distance badges
+- Modern cards
+- Map style UI
+
+--------------------------------------------------
+
+7. FUTURE GROWTH SECTION
+
+Create investment-focused section.
+
+Cards:
+
+1.
+Noida International Airport Impact
+
+2.
+Yamuna Expressway Connectivity
+
+3.
+Industrial Development
+
+4.
+Land Appreciation Potential
+
+Add professional infographic style design.
+
+--------------------------------------------------
+
+8. WHY INVEST HERE
+
+Create strong investor-focused section.
+
+Include:
+
+- Fast developing corridor
+- Airport-driven growth
+- Religious tourism demand
+- Future appreciation
+- Strategic connectivity
+- Safe investment opportunity
+
+--------------------------------------------------
+
+9. LEAD GENERATION SECTION
+
+Premium CTA block
+
+Heading:
+
+"Schedule Your Site Visit Today"
+
+Form Fields:
+
+- Name
+- Mobile
+- Email
+- City
+- Message
+
+Buttons:
+
+- Submit Inquiry
+- WhatsApp Now
+
+--------------------------------------------------
+
+10. TESTIMONIALS
+
+Create realistic UI placeholders.
+
+Cards:
+- Investor feedback
+- Family buyers
+- Plot owners
+
+--------------------------------------------------
+
+11. FAQ SECTION
+
+Questions:
+
+- What plot sizes are available?
+- Is registry available?
+- How far is Vrindavan?
+- Is loan facility available?
+- How can I book a site visit?
+
+--------------------------------------------------
+
+12. CONTACT PAGE
+
+Company:
+MRJB Group
+
+Sections:
+
+- Contact Form
+- Google Map Placeholder
+- Office Address
+- Phone
+- Email
+- WhatsApp CTA
+
+--------------------------------------------------
+
+13. FOOTER
+
+Include:
+
+- About
+- Quick Links
+- Amenities
+- Contact Details
+- Social Links
+
+Tagline:
+
+"Near Vrindavan, every breath feels blessed and every dream finds a home."
+
+--------------------------------------------------
+
+ADVANCED FEATURES
+
+- WhatsApp floating button
+- Call Now floating button
+- Scroll progress indicator
+- Sticky header
+- Image lazy loading
+- SEO metadata
+- Open Graph tags
+- Schema markup
+- Sitemap
+- Robots.txt
+
+--------------------------------------------------
+
+ADMIN READY STRUCTURE
+
+Store all content in reusable JSON objects.
+
+Create folders:
+
+/components
+/sections
+/data
+/public/images
+/app
+
+Make every section reusable and editable.
+
+--------------------------------------------------
+
+FINAL REQUIREMENT
+
+The website should look like a premium real-estate company website worth ₹2L+ design budget.
+
+Focus heavily on:
+- Trust
+- Luxury
+- Lead generation
+- Mobile experience
+- Conversion rate optimization
+
+Generate complete production-ready code.

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MRJB Group – Kunj Bihari Enclave"
+version = "1.0.0"
+id = "artifacts/mrjb-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21775
+
+[services.development]
+run = "pnpm --filter @workspace/mrjb-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mrjb-website", "run", "build" ]
+publicDir = "artifacts/mrjb-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21775"
+BASE_PATH = "/"
