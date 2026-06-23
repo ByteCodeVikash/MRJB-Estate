@@ -1,0 +1,206 @@
+The website structure, UI, animations, responsiveness and overall implementation look good.
+
+Now I am providing the official MRJB Group brochure.
+
+IMPORTANT TASK:
+
+Use the brochure as the PRIMARY SOURCE OF TRUTH.
+
+Do not redesign the website from scratch.
+
+Keep the existing design, components, responsiveness, animations and code architecture intact.
+
+Only enrich and update the website using brochure content, images, branding and project information.
+
+==================================================
+BROCHURE INTEGRATION TASK
+==================================================
+
+1. Extract all usable content from the brochure.
+
+2. Replace placeholder content with actual project content.
+
+3. Use brochure images throughout the website.
+
+4. Optimize all brochure images:
+   - compress
+   - lazy load
+   - responsive sizes
+   - modern formats where possible
+
+==================================================
+HERO SECTION
+==================================================
+
+Update hero using brochure branding.
+
+Project Name:
+Kunj Bihari Enclave – Phase 1
+
+Developer:
+MRJB Group
+
+Add brochure visuals.
+
+Create premium real-estate hero section using:
+- brochure cover image
+- township imagery
+- Vrindavan spiritual theme
+
+Keep luxury feel.
+
+==================================================
+PROJECT OVERVIEW
+==================================================
+
+Use actual brochure content.
+
+Include:
+
+- Premium plotted township
+- Near Vrindavan
+- Future investment opportunity
+- Strategic location
+- Airport growth corridor
+
+Create professional project overview section.
+
+==================================================
+MASTER PLAN
+==================================================
+
+Use the actual layout image from brochure.
+
+Requirements:
+
+- Full screen preview
+- Zoom
+- Pan
+- Download option
+- Mobile responsive
+
+Create a dedicated “Master Plan” section.
+
+==================================================
+AMENITIES
+==================================================
+
+Use actual brochure amenities.
+
+Display with icons/cards:
+
+✓ Electricity Pole
+✓ Gated Township
+✓ Water Line
+✓ Wide Roads
+✓ CCTV Security
+✓ Security Guard
+✓ Green Park
+✓ Temple
+✓ Community Hall
+
+Add hover animations.
+
+==================================================
+TOWNSHIP GALLERY
+==================================================
+
+Use township images from brochure.
+
+Create:
+
+- Gallery section
+- Lightbox
+- Fullscreen preview
+- Mobile swipe support
+
+Images should look premium.
+
+==================================================
+PRIME LOCATIONS
+==================================================
+
+Use brochure locations:
+
+- Prem Mandir
+- ISKCON Temple
+- Keshi Ghat
+- Shri Madan Mohan Ji Mandir
+- Chandrodaya Mandir
+
+Create attractive location cards.
+
+==================================================
+FUTURE GROWTH SECTION
+==================================================
+
+Use brochure growth points:
+
+1. Noida International Airport Impact
+
+2. Yamuna Expressway Connectivity
+
+3. Industrial Development
+
+4. Land Appreciation Potential
+
+Create infographic style layout.
+
+==================================================
+CONTENT QUALITY
+==================================================
+
+Remove all dummy content.
+
+Remove lorem ipsum.
+
+Remove fake statistics.
+
+Use brochure information wherever possible.
+
+==================================================
+SEO
+==================================================
+
+Update metadata using:
+
+MRJB Group
+Kunj Bihari Enclave Phase 1
+Vrindavan
+Yamuna Expressway
+Residential Plots
+
+Generate:
+- SEO title
+- meta description
+- Open Graph tags
+
+==================================================
+FINAL RULE
+==================================================
+
+DO NOT BREAK ANY EXISTING FEATURE.
+
+DO NOT REMOVE RESPONSIVENESS.
+
+DO NOT REMOVE ANIMATIONS.
+
+DO NOT CHANGE WORKING CODE UNNECESSARILY.
+
+Only upgrade the current website using brochure data and brochure images.
+
+After implementation:
+
+1. Verify all sections render correctly.
+2. Verify all images load.
+3. Verify mobile responsiveness.
+4. Verify no console errors.
+5. Verify no TypeScript errors.
+6. Verify no broken imports.
+7. Verify production build passes successfully.
+
+Then provide a summary of:
+- what brochure content was added
+- what images were integrated
+- what sections were updated
+- any missing information that still needs client input.
