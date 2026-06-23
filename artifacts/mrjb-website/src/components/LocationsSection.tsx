@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import locationsImg from "@assets/image_1782233764748.png";
+import locationsImg from "@assets/image_1782234262049.png";
 
 const locations = [
   { name: "Prem Mandir", distance: "8 km away", description: "One of India's most magnificent temples, known for its stunning white marble architecture and divine ambiance." },
