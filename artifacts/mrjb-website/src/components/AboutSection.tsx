@@ -3,7 +3,7 @@ import { siteData } from "@/data/siteData";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-24 bg-white relative overflow-hidden scroll-mt-24">
       {/* Background patterns */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#FDF8F0] rounded-bl-full -z-0 opacity-50" />
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#0B2E59]/5 rounded-tr-full -z-0 opacity-50" />

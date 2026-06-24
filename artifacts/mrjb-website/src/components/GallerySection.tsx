@@ -30,7 +30,7 @@ export default function GallerySection() {
     : galleryItems.filter(g => g.category === activeTab);
 
   return (
-    <section id="gallery" className="py-24 bg-[#06182E] relative border-t border-[#0B2E59]">
+    <section id="gallery" className="py-24 bg-[#06182E] relative border-t border-[#0B2E59] scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -45,12 +45,12 @@ export default function GallerySection() {
             Real images from Kunj Bihari Enclave Phase 1 — see the land, the layout, and the location that makes this investment exceptional.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
+          <div className="flex overflow-x-auto md:flex-wrap md:justify-center gap-2 md:gap-3 mb-8 pb-3 scrollbar-none -mx-6 px-6 md:mx-0 md:px-0">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`px-5 py-2 rounded-full border transition-all text-sm font-medium ${
+                className={`px-5 py-2 rounded-full border transition-all text-sm font-medium shrink-0 ${
                   activeTab === cat
                     ? "bg-[#D4AF37] border-[#D4AF37] text-[#0B2E59]"
                     : "bg-transparent border-white/20 text-white hover:border-[#D4AF37] hover:text-[#D4AF37]"

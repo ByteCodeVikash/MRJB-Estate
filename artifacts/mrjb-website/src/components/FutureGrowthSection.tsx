@@ -28,7 +28,7 @@ const growthPoints = [
 
 export default function FutureGrowthSection() {
   return (
-    <section className="py-24 bg-[#0B2E59] relative overflow-hidden">
+    <section className="py-24 bg-[#0B2E59] relative overflow-hidden scroll-mt-24">
       {/* Subtle decorative pattern */}
       <div
         className="absolute inset-0 opacity-[0.04] z-0"
@@ -82,27 +82,31 @@ export default function FutureGrowthSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors"
           >
-            <img
-              src={futureGrowthImg}
-              alt="Future Growth Around Kunj Bihari Enclave Investment — Airport, Expressway, Industrial, Appreciation"
-              loading="lazy"
-              className="w-full h-auto object-contain bg-white"
-            />
-            <div className="absolute inset-0 bg-[#0B2E59]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <button className="bg-[#D4AF37] text-[#0B2E59] px-5 py-3 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform">
-                    <Expand size={18} />
-                    View Full Infographic
-                  </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
-                  <img src={futureGrowthImg} alt="Future Growth Full View" className="w-full h-auto" />
-                </DialogContent>
-              </Dialog>
-            </div>
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="relative rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors cursor-pointer">
+                  <img
+                    src={futureGrowthImg}
+                    alt="Future Growth Around Kunj Bihari Enclave Investment — Airport, Expressway, Industrial, Appreciation"
+                    loading="lazy"
+                    className="w-full h-auto object-contain bg-white"
+                  />
+                  <div className="absolute inset-0 bg-[#0B2E59]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#0B2E59] px-4 py-2 sm:px-5 sm:py-3 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform text-sm sm:text-base pointer-events-none">
+                      <Expand size={18} />
+                      View Full Infographic
+                    </button>
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                    <Expand size={16} />
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-3xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
+                <img src={futureGrowthImg} alt="Future Growth Full View" className="w-full h-auto" />
+              </DialogContent>
+            </Dialog>
           </motion.div>
         </div>
       </div>

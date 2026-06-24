@@ -17,7 +17,8 @@ export default function Navbar() {
     setMobileMenuOpen(false);
     const el = document.getElementById(id);
     if (el) {
-      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      const headerOffset = window.innerWidth < 768 ? 96 : 88;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
@@ -31,10 +32,13 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           <div 
-            className="text-2xl md:text-3xl font-serif text-[#D4AF37] font-bold cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
-            MRJB Group
+            <img src="/logo.png" alt="MRJB Group Logo" className="h-10 w-auto md:h-12 transition-transform duration-300 hover:scale-105" />
+            <span className="text-xl md:text-2xl font-serif text-[#D4AF37] font-bold tracking-wide">
+              MRJB Group
+            </span>
           </div>
 
           {/* Desktop Nav */}

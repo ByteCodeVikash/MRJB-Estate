@@ -12,7 +12,7 @@ const locations = [
 
 export default function LocationsSection() {
   return (
-    <section id="location" className="py-24 bg-white relative overflow-hidden">
+    <section id="location" className="py-24 bg-white relative overflow-hidden scroll-mt-24">
       <div
         className="absolute inset-0 opacity-[0.03] z-0"
         style={{ backgroundImage: 'linear-gradient(#0B2E59 1px, transparent 1px), linear-gradient(90deg, #0B2E59 1px, transparent 1px)', backgroundSize: '40px 40px' }}

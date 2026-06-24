@@ -7,7 +7,7 @@ import regionalMapImg from "@assets/image_1782233791211.png";
 
 export default function MasterPlanSection() {
   return (
-    <section id="layout" className="py-24 bg-[#0B2E59] relative">
+    <section id="layout" className="py-24 bg-[#0B2E59] relative scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -36,27 +36,30 @@ export default function MasterPlanSection() {
               <Map size={14} />
               Kunj Bihari Enclave — Plot Layout
             </div>
-            <div className="relative rounded-xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors">
-              <img
-                src={mapLayoutImg}
-                alt="Plot Layout Map — Kunj Bihari Enclave Phase 1"
-                loading="lazy"
-                className="w-full h-auto object-contain bg-white"
-              />
-              <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform">
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="relative rounded-xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors cursor-pointer">
+                  <img
+                    src={mapLayoutImg}
+                    alt="Plot Layout Map — Kunj Bihari Enclave Phase 1"
+                    loading="lazy"
+                    className="w-full h-auto object-contain bg-white"
+                  />
+                  <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
                       <Expand size={20} />
                       View Full Layout
                     </button>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-7xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
-                    <img src={mapLayoutImg} alt="Plot Layout Full View" className="w-full h-auto" />
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                    <Expand size={16} />
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-7xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
+                <img src={mapLayoutImg} alt="Plot Layout Full View" className="w-full h-auto" />
+              </DialogContent>
+            </Dialog>
             <p className="text-blue-100/70 text-sm text-center">
               Colour-coded plots showing available sizes and positions within the gated township boundary.
             </p>
@@ -74,27 +77,30 @@ export default function MasterPlanSection() {
               <Map size={14} />
               YEIDA Master Plan 2041 — Strategic Location
             </div>
-            <div className="relative rounded-xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors">
-              <img
-                src={regionalMapImg}
-                alt="YEIDA Master Plan 2041 — Yamuna Expressway Industrial Development Area"
-                loading="lazy"
-                className="w-full h-auto object-contain bg-white"
-              />
-              <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform">
+            <Dialog>
+              <DialogTrigger asChild>
+                <div className="relative rounded-xl overflow-hidden border-2 border-[#D4AF37]/40 group hover:border-[#D4AF37] transition-colors cursor-pointer">
+                  <img
+                    src={regionalMapImg}
+                    alt="YEIDA Master Plan 2041 — Yamuna Expressway Industrial Development Area"
+                    loading="lazy"
+                    className="w-full h-auto object-contain bg-white"
+                  />
+                  <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
                       <Expand size={20} />
                       View Regional Plan
                     </button>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-7xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
-                    <img src={regionalMapImg} alt="YEIDA Master Plan 2041 Full View" className="w-full h-auto" />
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                    <Expand size={16} />
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-7xl w-11/12 p-1 bg-white border-[#D4AF37]/50">
+                <img src={regionalMapImg} alt="YEIDA Master Plan 2041 Full View" className="w-full h-auto" />
+              </DialogContent>
+            </Dialog>
             <p className="text-blue-100/70 text-sm text-center">
               Official YEIDA 2041 master plan — Vrindavan is positioned inside the fastest-growing development corridor in North India.
             </p>

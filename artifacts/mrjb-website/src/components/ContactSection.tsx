@@ -52,7 +52,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0B2E59]">
+    <section id="contact" className="py-24 bg-[#0B2E59] scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}

@@ -16,7 +16,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1 */}
           <div>
-            <h2 className="text-[#D4AF37] font-serif text-3xl font-bold mb-6">MRJB Group</h2>
+            <div className="flex items-center gap-3 mb-6">
+              <img src="/logo.png" alt="MRJB Group Logo" className="h-12 w-auto" />
+              <span className="text-[#D4AF37] font-serif text-2xl font-bold tracking-wide">MRJB Group</span>
+            </div>
             <p className="text-blue-100/70 mb-6 leading-relaxed">
               Crafting premium residential plotted developments near Vrindavan. Secure your future in the fastest growing spiritual corridor of India.
             </p>
