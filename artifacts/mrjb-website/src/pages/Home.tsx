@@ -2,6 +2,7 @@ import ScrollProgress from "../components/ScrollProgress";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
 import MasterPlanSection from "../components/MasterPlanSection";
 import AmenitiesSection from "../components/AmenitiesSection";
 import GallerySection from "../components/GallerySection";
@@ -17,12 +18,13 @@ import FloatingButtons from "../components/FloatingButtons";
 
 export default function Home() {
   return (
-    <main className="min-h-[100dvh] w-full bg-white selection:bg-[#D4AF37] selection:text-[#0B2E59]">
+    <main className="min-h-[100dvh] w-full bg-white selection:bg-[#D4AF37] selection:text-[#1C1C1C]">
       <ScrollProgress />
       <Navbar />
       
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
       <MasterPlanSection />
       <AmenitiesSection />
       <GallerySection />

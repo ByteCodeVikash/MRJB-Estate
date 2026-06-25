@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -29,6 +30,15 @@ export default function LeadFormSection() {
     },
   });
 
+  useEffect(() => {
+    const handleEnquire = (e: Event) => {
+      const projectName = (e as CustomEvent).detail;
+      form.setValue("message", `I am interested in ${projectName}. Please share pricing and availability.`);
+    };
+    window.addEventListener("projectEnquire", handleEnquire);
+    return () => window.removeEventListener("projectEnquire", handleEnquire);
+  }, [form]);
+
   const onSubmit = (data: FormValues) => {
     try {
       const existingStr = localStorage.getItem("mrjb_inquiries");
@@ -54,7 +64,7 @@ export default function LeadFormSection() {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0B2E59] via-[#0B2E59] to-[#D4AF37] opacity-90 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1C1C1C] via-[#111111] to-[#D4AF37] opacity-95 z-0" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
@@ -96,7 +106,7 @@ export default function LeadFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Full Name *" className="bg-white/90 border-transparent text-[#0B2E59] placeholder:text-gray-500" {...field} />
+                        <Input placeholder="Full Name *" className="bg-white/90 border-transparent text-[#1C1C1C] placeholder:text-gray-500" {...field} />
                       </FormControl>
                       <FormMessage className="text-red-300" />
                     </FormItem>
@@ -109,7 +119,7 @@ export default function LeadFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Mobile Number *" type="tel" className="bg-white/90 border-transparent text-[#0B2E59] placeholder:text-gray-500" {...field} />
+                        <Input placeholder="Mobile Number *" type="tel" className="bg-white/90 border-transparent text-[#1C1C1C] placeholder:text-gray-500" {...field} />
                       </FormControl>
                       <FormMessage className="text-red-300" />
                     </FormItem>
@@ -122,7 +132,7 @@ export default function LeadFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Email Address *" type="email" className="bg-white/90 border-transparent text-[#0B2E59] placeholder:text-gray-500" {...field} />
+                        <Input placeholder="Email Address *" type="email" className="bg-white/90 border-transparent text-[#1C1C1C] placeholder:text-gray-500" {...field} />
                       </FormControl>
                       <FormMessage className="text-red-300" />
                     </FormItem>
@@ -135,7 +145,7 @@ export default function LeadFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Current City *" className="bg-white/90 border-transparent text-[#0B2E59] placeholder:text-gray-500" {...field} />
+                        <Input placeholder="Current City *" className="bg-white/90 border-transparent text-[#1C1C1C] placeholder:text-gray-500" {...field} />
                       </FormControl>
                       <FormMessage className="text-red-300" />
                     </FormItem>
@@ -148,14 +158,14 @@ export default function LeadFormSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Textarea placeholder="Any specific requirements? (Optional)" className="bg-white/90 border-transparent text-[#0B2E59] placeholder:text-gray-500 resize-none" rows={3} {...field} />
+                        <Textarea placeholder="Any specific requirements? (Optional)" className="bg-white/90 border-transparent text-[#1C1C1C] placeholder:text-gray-500 resize-none" rows={3} {...field} />
                       </FormControl>
                       <FormMessage className="text-red-300" />
                     </FormItem>
                   )}
                 />
 
-                <Button type="submit" className="w-full bg-[#D4AF37] hover:bg-white text-[#0B2E59] font-bold text-lg h-12 transition-all group mt-2">
+                <Button type="submit" className="w-full bg-[#D4AF37] hover:bg-white text-[#1C1C1C] font-bold text-lg h-12 transition-all group mt-2 cursor-pointer">
                   Submit Inquiry
                   <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

@@ -35,10 +35,10 @@ export default function FloatingButtons() {
       {/* Call Button */}
       <a
         href={phoneUrl}
-        className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#0B2E59] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] shadow-xl hover:bg-[#D4AF37] hover:text-[#0B2E59] transition-all group relative"
+        className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#1C1C1C] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] shadow-xl hover:bg-[#D4AF37] hover:text-[#1C1C1C] transition-all group relative cursor-pointer"
       >
         <Phone className="w-5 h-5 md:w-6 md:h-6" />
-        <span className="absolute right-full mr-4 bg-[#0B2E59] text-white px-3 py-1 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <span className="absolute right-full mr-4 bg-[#1C1C1C] text-white px-3 py-1 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
           Call Us Now
         </span>
       </a>
@@ -52,7 +52,7 @@ export default function FloatingButtons() {
       >
         <div className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75" />
         <MessageCircle className="w-6 h-6 md:w-7 md:h-7 relative z-10" />
-        <span className="absolute right-full mr-4 bg-[#0B2E59] text-white px-3 py-1 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <span className="absolute right-full mr-4 bg-[#1C1C1C] text-white px-3 py-1 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
           Chat on WhatsApp
         </span>
       </a>

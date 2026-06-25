@@ -28,7 +28,7 @@ const growthPoints = [
 
 export default function FutureGrowthSection() {
   return (
-    <section className="py-24 bg-[#0B2E59] relative overflow-hidden scroll-mt-24">
+    <section className="py-24 bg-[#1C1C1C] relative overflow-hidden scroll-mt-24">
       {/* Subtle decorative pattern */}
       <div
         className="absolute inset-0 opacity-[0.04] z-0"
@@ -45,7 +45,7 @@ export default function FutureGrowthSection() {
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Investment Potential</span>
           <h2 className="font-serif text-4xl md:text-5xl text-white font-bold">Future Growth Around Your Investment</h2>
-          <p className="text-blue-100/70 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300/70 mt-4 max-w-2xl mx-auto">
             The land around Vrindavan is at the centre of one of India's most ambitious development corridors — driven by infrastructure, industry, and spiritual tourism.
           </p>
         </motion.div>
@@ -65,11 +65,11 @@ export default function FutureGrowthSection() {
                   className="bg-white/5 backdrop-blur-md border border-[#D4AF37]/25 p-6 rounded-xl hover:bg-white/10 hover:border-[#D4AF37]/60 transition-all flex gap-5"
                 >
                   <div className="w-12 h-12 rounded-full bg-[#D4AF37] flex items-center justify-center shrink-0">
-                    <Icon size={22} className="text-[#0B2E59]" />
+                    <Icon size={22} className="text-[#1C1C1C]" />
                   </div>
                   <div>
                     <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-blue-100/75 text-sm leading-relaxed">{item.description}</p>
+                    <p className="text-gray-300/75 text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </motion.div>
               );
@@ -92,13 +92,13 @@ export default function FutureGrowthSection() {
                     loading="lazy"
                     className="w-full h-auto object-contain bg-white"
                   />
-                  <div className="absolute inset-0 bg-[#0B2E59]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                    <button className="bg-[#D4AF37] text-[#0B2E59] px-4 py-2 sm:px-5 sm:py-3 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform text-sm sm:text-base pointer-events-none">
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#1C1C1C] px-4 py-2 sm:px-5 sm:py-3 rounded font-bold flex items-center gap-2 hover:scale-105 transition-transform text-sm sm:text-base pointer-events-none">
                       <Expand size={18} />
                       View Full Infographic
                     </button>
                   </div>
-                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#1C1C1C] p-2 rounded-full shadow-lg md:hidden opacity-90">
                     <Expand size={16} />
                   </div>
                 </div>

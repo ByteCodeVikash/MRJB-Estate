@@ -7,7 +7,7 @@ import regionalMapImg from "@assets/image_1782233791211.png";
 
 export default function MasterPlanSection() {
   return (
-    <section id="layout" className="py-24 bg-[#0B2E59] relative scroll-mt-24">
+    <section id="layout" className="py-24 bg-[#1C1C1C] relative scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -18,7 +18,7 @@ export default function MasterPlanSection() {
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Layout</span>
           <h2 className="font-serif text-4xl md:text-5xl text-white font-bold">Project Layout & Master Plan</h2>
-          <p className="text-blue-100/80 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300/80 mt-4 max-w-2xl mx-auto">
             A meticulously planned township featuring wide internal roads, dedicated green spaces, and strategically numbered plots ready for registry.
           </p>
         </motion.div>
@@ -45,13 +45,13 @@ export default function MasterPlanSection() {
                     loading="lazy"
                     className="w-full h-auto object-contain bg-white"
                   />
-                  <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#1C1C1C] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
                       <Expand size={20} />
                       View Full Layout
                     </button>
                   </div>
-                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#1C1C1C] p-2 rounded-full shadow-lg md:hidden opacity-90">
                     <Expand size={16} />
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export default function MasterPlanSection() {
                 <img src={mapLayoutImg} alt="Plot Layout Full View" className="w-full h-auto" />
               </DialogContent>
             </Dialog>
-            <p className="text-blue-100/70 text-sm text-center">
+            <p className="text-gray-300/70 text-sm text-center">
               Colour-coded plots showing available sizes and positions within the gated township boundary.
             </p>
           </motion.div>
@@ -86,13 +86,13 @@ export default function MasterPlanSection() {
                     loading="lazy"
                     className="w-full h-auto object-contain bg-white"
                   />
-                  <div className="absolute inset-0 bg-[#0B2E59]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                    <button className="bg-[#D4AF37] text-[#0B2E59] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <button className="bg-[#D4AF37] text-[#1C1C1C] px-6 py-3 rounded font-bold flex items-center gap-2 transform hover:scale-105 transition-transform pointer-events-none">
                       <Expand size={20} />
                       View Regional Plan
                     </button>
                   </div>
-                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#0B2E59] p-2 rounded-full shadow-lg md:hidden opacity-90">
+                  <div className="absolute bottom-3 right-3 bg-[#D4AF37] text-[#1C1C1C] p-2 rounded-full shadow-lg md:hidden opacity-90">
                     <Expand size={16} />
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export default function MasterPlanSection() {
                 <img src={regionalMapImg} alt="YEIDA Master Plan 2041 Full View" className="w-full h-auto" />
               </DialogContent>
             </Dialog>
-            <p className="text-blue-100/70 text-sm text-center">
+            <p className="text-gray-300/70 text-sm text-center">
               Official YEIDA 2041 master plan — Vrindavan is positioned inside the fastest-growing development corridor in North India.
             </p>
           </motion.div>
@@ -123,7 +123,7 @@ export default function MasterPlanSection() {
           ].map((stat, i) => (
             <div key={i} className="text-center bg-white/5 border border-[#D4AF37]/20 rounded-lg py-5 px-3">
               <div className="text-[#D4AF37] font-bold text-lg md:text-xl font-serif">{stat.value}</div>
-              <div className="text-blue-100/60 text-xs mt-1 uppercase tracking-wide">{stat.label}</div>
+              <div className="text-gray-400/60 text-xs mt-1 uppercase tracking-wide">{stat.label}</div>
             </div>
           ))}
         </motion.div>

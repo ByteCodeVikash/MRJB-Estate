@@ -28,7 +28,7 @@ export default function HeroSection() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#06182E]/90 to-[#0B2E59]/80 mix-blend-multiply" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/90 to-[#1C1C1C]/80 mix-blend-multiply" />
       
       {/* Decorative Lines */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
@@ -66,11 +66,11 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12 xl:mb-16 w-full sm:w-auto">
-            <button onClick={scrollToContact} className="bg-[#D4AF37] hover:bg-[#FDF8F0] text-[#0B2E59] px-8 py-4 rounded font-bold flex items-center justify-center gap-2 transition-all">
+            <button onClick={scrollToContact} className="bg-[#D4AF37] hover:bg-[#FDF8F0] text-[#1C1C1C] px-8 py-4 rounded font-bold flex items-center justify-center gap-2 transition-all cursor-pointer">
               <Calendar size={20} />
               Book Site Visit
             </button>
-            <button className="border border-[#D4AF37] hover:bg-[#D4AF37]/10 text-[#D4AF37] px-8 py-4 rounded font-bold flex items-center justify-center gap-2 transition-all backdrop-blur-sm bg-white/5">
+            <button className="border border-[#D4AF37] hover:bg-[#D4AF37]/10 text-[#D4AF37] px-8 py-4 rounded font-bold flex items-center justify-center gap-2 transition-all backdrop-blur-sm bg-white/5 cursor-pointer">
               <Download size={20} />
               Download Brochure
             </button>

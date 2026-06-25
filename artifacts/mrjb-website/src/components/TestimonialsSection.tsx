@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Testimonials</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#0B2E59] font-bold">What Our Buyers Say</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1C1C] font-bold">What Our Buyers Say</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
                   {testimonial.initials}
                 </div>
                 <div>
-                  <h4 className="text-[#0B2E59] font-bold font-serif">{testimonial.name}</h4>
+                  <h4 className="text-[#1C1C1C] font-bold font-serif">{testimonial.name}</h4>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>

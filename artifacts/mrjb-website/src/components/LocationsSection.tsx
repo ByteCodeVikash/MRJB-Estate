@@ -15,7 +15,7 @@ export default function LocationsSection() {
     <section id="location" className="py-24 bg-white relative overflow-hidden scroll-mt-24">
       <div
         className="absolute inset-0 opacity-[0.03] z-0"
-        style={{ backgroundImage: 'linear-gradient(#0B2E59 1px, transparent 1px), linear-gradient(90deg, #0B2E59 1px, transparent 1px)', backgroundSize: '40px 40px' }}
+        style={{ backgroundImage: 'linear-gradient(#D4AF37 1px, transparent 1px), linear-gradient(90deg, #D4AF37 1px, transparent 1px)', backgroundSize: '40px 40px' }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -27,7 +27,7 @@ export default function LocationsSection() {
           className="text-center mb-16"
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Connectivity</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#0B2E59] font-bold">Surrounded by Sacred & Modern Landmarks</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1C1C] font-bold">Landmarks & Connectivity</h2>
           <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
             Kunj Bihari Enclave places you moments away from the holiest sites of Vrindavan — where spiritual legacy meets strategic living.
           </p>
@@ -66,7 +66,7 @@ export default function LocationsSection() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
-                    <h3 className="text-[#0B2E59] font-bold text-base">{loc.name}</h3>
+                    <h3 className="text-[#1C1C1C] font-bold font-serif">{loc.name}</h3>
                     <span className="bg-[#D4AF37]/10 text-[#D4AF37] font-semibold text-xs px-3 py-0.5 rounded-full shrink-0">
                       {loc.distance}
                     </span>

@@ -14,7 +14,7 @@ export default function AmenitiesSection() {
           className="text-center mb-16"
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Facilities</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#0B2E59] font-bold">World-Class Amenities</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1C1C] font-bold">World-Class Amenities</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -32,7 +32,7 @@ export default function AmenitiesSection() {
                 <div className="w-14 h-14 rounded-full bg-[#D4AF37]/10 flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] transition-colors">
                   {Icon && <Icon size={28} className="text-[#D4AF37] group-hover:text-white transition-colors" />}
                 </div>
-                <h3 className="text-[#0B2E59] font-bold text-xl mb-3">{amenity.title}</h3>
+                <h3 className="text-[#1C1C1C] font-bold text-xl mb-3">{amenity.title}</h3>
                 <p className="text-gray-600">{amenity.description}</p>
               </motion.div>
             );

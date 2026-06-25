@@ -13,7 +13,7 @@ export default function WhyInvestSection() {
           className="text-center mb-16"
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Advantages</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#0B2E59] font-bold max-w-3xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1C1C1C] font-bold max-w-3xl mx-auto">
             6 Reasons Smart Investors Choose Kunj Bihari Enclave
           </h2>
         </motion.div>
@@ -31,7 +31,7 @@ export default function WhyInvestSection() {
               <div className="absolute top-6 right-6 text-4xl font-serif font-black text-[#D4AF37]/20">
                 0{i + 1}
               </div>
-              <h3 className="text-[#0B2E59] font-bold text-xl mb-3 pr-8 relative z-10">{reason.title}</h3>
+              <h3 className="text-[#1C1C1C] font-bold text-xl mb-3 pr-8 relative z-10">{reason.title}</h3>
               <p className="text-gray-600 text-sm relative z-10">{reason.description}</p>
             </motion.div>
           ))}

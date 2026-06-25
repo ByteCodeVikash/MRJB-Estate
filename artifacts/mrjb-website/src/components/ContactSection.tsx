@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -29,6 +30,15 @@ export default function ContactSection() {
     },
   });
 
+  useEffect(() => {
+    const handleEnquire = (e: Event) => {
+      const projectName = (e as CustomEvent).detail;
+      form.setValue("message", `I am interested in ${projectName}. Please share pricing and availability.`);
+    };
+    window.addEventListener("projectEnquire", handleEnquire);
+    return () => window.removeEventListener("projectEnquire", handleEnquire);
+  }, [form]);
+
   const onSubmit = (data: FormValues) => {
     try {
       const existingStr = localStorage.getItem("mrjb_inquiries");
@@ -52,7 +62,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0B2E59] scroll-mt-24">
+    <section id="contact" className="py-24 bg-[#1C1C1C] scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
@@ -62,7 +72,7 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="font-serif text-4xl md:text-5xl text-white font-bold">Get In Touch With Us</h2>
-          <p className="text-blue-100 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
             Our experts are ready to assist you in finding the perfect plot for your dream home or investment.
           </p>
         </motion.div>
@@ -85,7 +95,11 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1">Office Address</h4>
-                  <p className="text-blue-100/80 leading-relaxed">{siteData.project.contact.address}</p>
+                  <p className="text-gray-300/80 leading-relaxed">
+                    <strong>MRJB Group</strong>
+                    <br />
+                    {siteData.project.contact.address}
+                  </p>
                 </div>
               </div>
               
@@ -95,7 +109,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1">Phone Number</h4>
-                  <a href={`tel:${siteData.project.contact.phone.replace(/[^0-9+]/g, '')}`} className="text-blue-100/80 hover:text-[#D4AF37] transition-colors">
+                  <a href={`tel:${siteData.project.contact.phone.replace(/[^0-9+]/g, '')}`} className="text-gray-300/80 hover:text-[#D4AF37] transition-colors">
                     {siteData.project.contact.phone}
                   </a>
                 </div>
@@ -107,7 +121,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-1">Email Address</h4>
-                  <a href={`mailto:${siteData.project.contact.email}`} className="text-blue-100/80 hover:text-[#D4AF37] transition-colors">
+                  <a href={`mailto:${siteData.project.contact.email}`} className="text-gray-300/80 hover:text-[#D4AF37] transition-colors">
                     {siteData.project.contact.email}
                   </a>
                 </div>
@@ -129,7 +143,7 @@ export default function ContactSection() {
               href="https://maps.google.com" 
               target="_blank" 
               rel="noreferrer"
-              className="block w-full h-32 bg-[#06182E] border border-[#D4AF37]/30 rounded-lg flex items-center justify-center text-[#D4AF37] hover:bg-[#06182E]/80 transition-colors group"
+              className="block w-full h-32 bg-[#111111] border border-[#D4AF37]/30 rounded-lg flex items-center justify-center text-[#D4AF37] hover:bg-[#111111]/80 transition-colors group cursor-pointer"
             >
               <div className="flex flex-col items-center gap-2">
                 <MapPin className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -146,7 +160,7 @@ export default function ContactSection() {
             transition={{ duration: 0.7 }}
             className="flex-1 bg-white rounded-2xl p-8 shadow-2xl"
           >
-            <h3 className="text-[#0B2E59] font-bold text-2xl mb-6">Send Us A Message</h3>
+            <h3 className="text-[#1C1C1C] font-bold text-2xl mb-6">Send Us A Message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <FormField
@@ -155,7 +169,7 @@ export default function ContactSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Full Name *" className="bg-gray-50 border-gray-200 text-[#0B2E59] h-12" {...field} />
+                        <Input placeholder="Full Name *" className="bg-gray-50 border-gray-200 text-[#1C1C1C] h-12" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -169,7 +183,7 @@ export default function ContactSection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Input placeholder="Mobile Number *" type="tel" className="bg-gray-50 border-gray-200 text-[#0B2E59] h-12" {...field} />
+                          <Input placeholder="Mobile Number *" type="tel" className="bg-gray-50 border-gray-200 text-[#1C1C1C] h-12" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -182,7 +196,7 @@ export default function ContactSection() {
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Input placeholder="Current City *" className="bg-gray-50 border-gray-200 text-[#0B2E59] h-12" {...field} />
+                          <Input placeholder="Current City *" className="bg-gray-50 border-gray-200 text-[#1C1C1C] h-12" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -196,7 +210,7 @@ export default function ContactSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Email Address *" type="email" className="bg-gray-50 border-gray-200 text-[#0B2E59] h-12" {...field} />
+                        <Input placeholder="Email Address *" type="email" className="bg-gray-50 border-gray-200 text-[#1C1C1C] h-12" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -209,14 +223,14 @@ export default function ContactSection() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Textarea placeholder="How can we help you?" className="bg-gray-50 border-gray-200 text-[#0B2E59] resize-none" rows={4} {...field} />
+                        <Textarea placeholder="How can we help you?" className="bg-gray-50 border-gray-200 text-[#1C1C1C] resize-none" rows={4} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
 
-                <Button type="submit" className="w-full bg-[#D4AF37] hover:bg-[#0B2E59] text-white hover:text-[#D4AF37] font-bold text-lg h-12 transition-all group mt-2">
+                <Button type="submit" className="w-full bg-[#D4AF37] hover:bg-[#1C1C1C] text-white hover:text-[#D4AF37] font-bold text-lg h-12 transition-all group mt-2 cursor-pointer">
                   Send Message
                   <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

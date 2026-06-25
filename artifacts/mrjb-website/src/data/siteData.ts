@@ -9,12 +9,13 @@ export const siteData = {
     contact: {
       phone: "+91 98765 43210",
       email: "info@mrjbgroup.com",
-      address: "Near Vrindavan, Mathura District, Uttar Pradesh - 281121",
+      address: "S-205, A1, Sector 59, Noida, Uttar Pradesh 201309",
     }
   },
   navLinks: [
     { title: "Home", href: "home" },
     { title: "About", href: "about" },
+    { title: "Projects", href: "projects" },
     { title: "Layout", href: "layout" },
     { title: "Amenities", href: "amenities" },
     { title: "Gallery", href: "gallery" },

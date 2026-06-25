@@ -30,7 +30,7 @@ export default function GallerySection() {
     : galleryItems.filter(g => g.category === activeTab);
 
   return (
-    <section id="gallery" className="py-24 bg-[#06182E] relative border-t border-[#0B2E59] scroll-mt-24">
+    <section id="gallery" className="py-24 bg-[#111111] relative border-t border-[#1A1A1A] scroll-mt-24">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -41,7 +41,7 @@ export default function GallerySection() {
         >
           <span className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 block">Gallery</span>
           <h2 className="font-serif text-4xl md:text-5xl text-white font-bold mb-4">Township Gallery</h2>
-          <p className="text-blue-100/70 max-w-2xl mx-auto mb-10">
+          <p className="text-gray-300/70 max-w-2xl mx-auto mb-10">
             Real images from Kunj Bihari Enclave Phase 1 — see the land, the layout, and the location that makes this investment exceptional.
           </p>
 
@@ -52,7 +52,7 @@ export default function GallerySection() {
                 onClick={() => setActiveTab(cat)}
                 className={`px-5 py-2 rounded-full border transition-all text-sm font-medium shrink-0 ${
                   activeTab === cat
-                    ? "bg-[#D4AF37] border-[#D4AF37] text-[#0B2E59]"
+                    ? "bg-[#D4AF37] border-[#D4AF37] text-[#1C1C1C]"
                     : "bg-transparent border-white/20 text-white hover:border-[#D4AF37] hover:text-[#D4AF37]"
                 }`}
               >
@@ -81,12 +81,12 @@ export default function GallerySection() {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#06182E] via-[#06182E]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                 <span className="text-[#D4AF37] text-xs font-bold uppercase tracking-wider mb-1">{item.category}</span>
                 <h4 className="text-white font-serif text-lg font-bold leading-tight">{item.title}</h4>
                 <p className="text-white/70 text-xs mt-1 line-clamp-2">{item.description}</p>
               </div>
-              <div className="absolute top-3 right-3 bg-[#D4AF37] text-[#0B2E59] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+              <div className="absolute top-3 right-3 bg-[#D4AF37] text-[#1C1C1C] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                 {item.category}
               </div>
             </motion.div>
@@ -96,7 +96,7 @@ export default function GallerySection() {
 
       {selected && (
         <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
-          <DialogContent className="max-w-5xl w-11/12 bg-[#06182E] border border-[#D4AF37]/30 p-2">
+          <DialogContent className="max-w-5xl w-11/12 bg-[#111111] border border-[#D4AF37]/30 p-2">
             <button
               onClick={() => setSelected(null)}
               className="absolute top-3 right-3 z-10 bg-white/10 hover:bg-white/20 text-white rounded-full p-1.5 transition-colors"
@@ -110,7 +110,7 @@ export default function GallerySection() {
             />
             <div className="p-4">
               <h3 className="text-white font-serif text-xl font-bold">{selected.title}</h3>
-              <p className="text-blue-100/70 text-sm mt-1">{selected.description}</p>
+              <p className="text-gray-300/70 text-sm mt-1">{selected.description}</p>
             </div>
           </DialogContent>
         </Dialog>

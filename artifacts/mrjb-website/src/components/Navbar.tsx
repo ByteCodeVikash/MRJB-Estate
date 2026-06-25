@@ -27,7 +27,7 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-[#0B2E59]/90 backdrop-blur-md shadow-lg py-4" : "bg-transparent py-6"
+          scrolled ? "bg-[#1A1A1A]/90 backdrop-blur-md shadow-lg py-4" : "bg-transparent py-6"
         }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
@@ -57,7 +57,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-[#D4AF37] text-[#0B2E59] px-6 py-2 rounded font-semibold flex items-center gap-2 hover:bg-[#FDF8F0] transition-colors"
+              className="bg-[#D4AF37] text-[#1A1A1A] px-6 py-2 rounded font-semibold flex items-center gap-2 hover:bg-[#FDF8F0] transition-colors"
             >
               Book Site Visit
             </button>
@@ -80,7 +80,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-[#0B2E59] pt-24 px-6 flex flex-col items-center gap-8 md:hidden"
+            className="fixed inset-0 z-40 bg-[#1A1A1A] pt-24 px-6 flex flex-col items-center gap-8 md:hidden"
           >
             {siteData.navLinks.map((link) => (
               <button
@@ -93,7 +93,7 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-[#D4AF37] text-[#0B2E59] px-8 py-3 rounded text-xl font-bold w-full max-w-sm mt-4"
+              className="bg-[#D4AF37] text-[#1A1A1A] px-8 py-3 rounded text-xl font-bold w-full max-w-sm mt-4"
             >
               Book Site Visit
             </button>
